@@ -41,6 +41,17 @@ body{
 	height:100%;
 }
 
+.time {
+	color:#FFFFFF;
+	font-family: haxrcorp, monospace;
+	font-size:16px;
+	position: absolute;
+	top: -18px;
+    width: auto;
+	height: auto;
+    left: 2px;
+}
+
 .sidebar {
 	border-style: solid;
 	border-width: 2px;
