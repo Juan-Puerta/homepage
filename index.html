@@ -5,16 +5,27 @@
 		<script type="text/javascript" src="jquery-1.11.3.min.js"></script>
 		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
 		<link rel="stylesheet" type="text/css" href="index.css"/>
+		<script type="text/javascript">
+			function show( show1 ) {
+			  document.getElementById(show1).style.display="block";
+			}
+			function hide( hide1 ) {
+			  document.getElementById(hide1).style.display="none";
+			}
+			function tog( tog1 ) {
+			  document.getElementById(tog1).style.backgroundColor="#777777";
+			}
+			function toh( toh1 ) {
+			  document.getElementById(toh1).style.backgroundColor="#ffffff";
+			}
+		</script>
 	</head>
 	<body>
 		<div class="main_container">
 			<div class="bottom_container">
-				<div class="button" id="btn1"></div>
-				<div class="button" id="btn2"></div>
+				<div class="button" id="btn1" onclick = "show('main_1');hide('main_2');tog('btn1');toh('btn2');"></div>
+				<div class="button" id="btn2" onclick = "show('main_2');hide('main_1');tog('btn2');toh('btn1');"></div>
 
-				<div class="marquee_bar" id="marqueebar">
-					<marquee id="news1" class="marquee_2"></marquee>
-				</div>
 				<div class="search_bar">
 					<form name="form1" action="http://google.com/search" target="_blank" method="get" >
 						<input type="text" autocomplete="off" placeholder="google search..." name="q" class="search_input"></input>
@@ -75,7 +86,7 @@
 			</div>
 			<div class="main" id="main_2" style="display:none">
 				<div class="sidebar" style="background-image: url(img/m2.gif);"></div>
-				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/1I3YhzxZUKc" frameborder="0" allowfullscreen></iframe>			
+				<iframe width="100%" height="100%" src="https://www.youtube.com/embed/7YkkTjOXsio" frameborder="0" allowfullscreen></iframe>	
 			</div>
 		</div>
 	</body>
